@@ -15,16 +15,19 @@ body {
 }
 #bg-opacity.showOpacity{
   top: 120px;
-  height: 800px;
+  height: 817px;
 }  
 /*animation*/
 #swipe-cmpnt {
   position: absolute;
-  bottom: -150px;
+  visibility: hidden;
+  left: -450px;
   width: 400px;
+  transition: left 1s ease-out;
 } 
-.showMenu > #swipe-cmpnt { 
-  bottom:400px;
+.showMenu > #swipe-cmpnt {
+  left: 0px;
+  visibility: visible;
 }
 .showMenu > #swipe-cmpnt p { 
   text-transform: none;
@@ -66,6 +69,7 @@ body {
 } 
 #menu-wrapper.showMenu > .slideInUp.animated {
   bottom: 220px !important;
+  
 } 
 #show-menu {
   float: right;
@@ -116,7 +120,7 @@ button { position:fixed; right:10px;}
 #menu-wrapper{
   display: block;
   width: 34px;
-  height: 800px;
+  height: 1080px;
   background: #E20177;
   transition: .68s all ease-in; 
   -webkit-box-shadow: -3px -16px 48px -15px rgba(0,0,0,0.42);
@@ -124,9 +128,9 @@ button { position:fixed; right:10px;}
   box-shadow: -3px -16px 48px -15px rgba(0,0,0,0.42);
 } 
 #menu-wrapper.showMenu{
-  height: 800px;
+  height: 1080px;
   width: 400px;
-  
+  transition: .62s all ease-in !important;
 }
 #menu-wrapper p {
   color: #fff;
@@ -264,13 +268,16 @@ background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAY
     margin-left: 230px;
     will-change: transform; 
   }
-    #swipe-cmpnt {
+  #swipe-cmpnt {
     position: absolute;
-    bottom: -150px;
+    bottom: -450px;
     width: 100%;
+    visibility: hidden;
+    transition: bottom 1s;
   }  
   .showMenu > #swipe-cmpnt { 
     bottom:60px;
+    visibility: visible;
   }
 }
 
