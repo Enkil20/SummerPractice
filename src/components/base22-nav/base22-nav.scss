@@ -1,0 +1,31 @@
+nav{
+  align-content: center;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  height: 120px;
+}
+img{
+  height: 50px;
+  width: 180px;
+  margin: 2% 50%;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  nav{
+    width: 770px;
+    }
+  img{
+      height: 50px;
+      width: 180px;
+      margin: 2% 22%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  nav{
+    width: 480px;
+    }
+  img{
+      height: 50px;
+      width: 180px;
+      margin: 2% 18%;
+  }
+}
